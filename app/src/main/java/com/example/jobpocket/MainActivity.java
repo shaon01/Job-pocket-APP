@@ -1,5 +1,6 @@
 package com.example.jobpocket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -97,5 +98,17 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void Mentor (View view) {
+
+        Intent i =new Intent(MainActivity.this, Mentor.class);
+        startActivity(i);
+    }
+
+    public void Companies (View view) {
+
+        Intent i =new Intent(MainActivity.this, Companies.class);
+        startActivity(i);
     }
 }
