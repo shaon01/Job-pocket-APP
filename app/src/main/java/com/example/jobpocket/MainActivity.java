@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity
 
     public void Companies (View view) {
 
-        Intent i =new Intent(MainActivity.this, Companies.class);
+        Intent i =new Intent(MainActivity.this, Compaines.class);
         startActivity(i);
     }
 }

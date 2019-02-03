@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Companies"
-            android:label="@string/title_activity_companies"
+            android:name=".Compaines"
+            android:label="@string/title_activity_compaines"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".Mentor"
