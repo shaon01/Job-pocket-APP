@@ -9,42 +9,41 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <ImageButton
-        android:id="@+id/mentor"
-        android:layout_width="111dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="244dp"
-        android:background="@drawable/employee"
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/mentorIcon"
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="264dp"
         android:onClick="Mentor"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/companies"
-        android:layout_width="111dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="244dp"
-        android:background="@drawable/company"
-        android:onClick="Companies"
-        app:layout_constraintEnd_toStartOf="@+id/contact"
+        android:src="@drawable/datascients"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyIcon"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mentor"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/contact"
-        android:layout_width="111dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="244dp"
-        android:background="@drawable/about_us"
-        android:onClick="AboutUs"
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/companyIcon"
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="264dp"
+        android:onClick="Companies"
+        android:src="@drawable/company"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#8BC34A"
+        app:civ_shadow_radius="10"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/companies"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/mentorIcon" />
+
 
     <TextView
         android:id="@+id/jobPocketWelcome"
