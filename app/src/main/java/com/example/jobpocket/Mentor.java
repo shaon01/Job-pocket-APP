@@ -1,6 +1,7 @@
 package com.example.jobpocket;
 
-import android.content.res.AssetManager;
+
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,14 +9,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
-
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
+
+import android.widget.MediaController;
+import android.widget.Toast;
+
 
 import java.io.BufferedReader;
-//import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-//import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Mentor extends AppCompatActivity {
@@ -70,6 +75,47 @@ public class Mentor extends AppCompatActivity {
         story.setMovementMethod(new ScrollingMovementMethod());
 
         // END reading mentor description from text file
+
+
+        // START of playing video of mentor
+        String videoURL = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+        final Uri uri = Uri.parse(videoURL);
+        final VideoView videoView;
+        final ProgressDialog progressDialog;
+
+        videoView = findViewById(R.id.mentorVideo);
+        final MediaController mediacontroller = new MediaController(this);
+        mediacontroller.setAnchorView(videoView);
+
+        // a buffering window while waiting
+        progressDialog = new ProgressDialog(Mentor.this);
+        progressDialog.setMessage("Buffering video please wait...");
+        progressDialog.show();
+
+
+        videoView.setMediaController(mediacontroller);
+
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setOnVideoSizeChangedListener(new MediaPlayer.OnVideoSizeChangedListener() {
+                    @Override
+                    public void onVideoSizeChanged(MediaPlayer mp, int width, int height) {
+                        videoView.setMediaController(mediacontroller);
+                        mediacontroller.setAnchorView(videoView);
+
+                    }
+                });
+                progressDialog.dismiss();
+            }
+        });
+
+        videoView.setVideoURI(uri);
+        videoView.requestFocus();
+        //videoView.start();
+
+        // END of playing video of mentor
+
 
     }
 
