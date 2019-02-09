@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 
 import android.widget.TextView;
@@ -65,6 +66,8 @@ public class Mentor extends AppCompatActivity {
         }
         TextView story = findViewById(R.id.mentorStory);
         story.setText(tempStory) ;
+        //story.setSelected(true);
+        story.setMovementMethod(new ScrollingMovementMethod());
 
         // END reading mentor description from text file
 
