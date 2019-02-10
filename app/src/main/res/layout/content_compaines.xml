@@ -4,35 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Compaines">
+    tools:context=".Compaines"
+    android:background="@drawable/halfcircle">
 
     <LinearLayout
         android:orientation="vertical"
         android:weightSum="10"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/companybackground">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_weight="2">
+            android:layout_height="150dp"
+            android:layout_weight="8">
 
             <TextView
                 android:id="@+id/textGrid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GRID LAYOUT"
                 android:layout_centerInParent="true"
+                android:text="Meet Us"
                 android:textColor="@android:color/white"
-                android:textSize="34sp" />
+                android:textSize="30sp" />
 
         </RelativeLayout>
 
         <GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
-            android:layout_height="684dp"
+            android:layout_height="650dp"
             android:layout_weight="8"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
