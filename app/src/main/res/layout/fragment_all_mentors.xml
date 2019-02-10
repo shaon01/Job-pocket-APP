@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllMentorsFragment"
+    tools:showIn="@layout/activity_all_mentors">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mentor1pic"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="picture of mentor1"
+                android:src="@drawable/datascients"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mentor1name"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/fst_mentor_name"
+                android:textAlignment="gravity"
+                android:gravity="left"
+                app:layout_constraintBottom_toTopOf="@+id/mentor1bio"
+                app:layout_constraintStart_toEndOf="@+id/mentor1pic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mentor1bio"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/fst_mentor_bio"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/mentor1name"
+                app:layout_constraintTop_toBottomOf="@+id/mentor1name" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

@@ -9,4 +9,7 @@
     <string name="title_activity_mentor">Mentor</string>
     <string name="title_activity_compaines">Compaines</string>
     <string name="welcomeTitle">Start a journey with \n job pocket</string>
+    <string name="title_activity_all_mentors">AllMentors</string>
+    <string name="fst_mentor_name">Alicia keys \n Age : 32</string>
+    <string name="fst_mentor_bio">I am professional in data science and I love my profession.</string>
 </resources>
