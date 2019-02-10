@@ -8,4 +8,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_mentor">Mentor</string>
     <string name="title_activity_compaines">Compaines</string>
+    <string name="welcomeTitle">Start a journey with \n job pocket</string>
 </resources>
