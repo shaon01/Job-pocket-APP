@@ -92,7 +92,6 @@ public class Mentor extends AppCompatActivity {
         progressDialog.setMessage("Buffering video please wait...");
         progressDialog.show();
 
-
         videoView.setMediaController(mediacontroller);
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -112,7 +111,8 @@ public class Mentor extends AppCompatActivity {
 
         videoView.setVideoURI(uri);
         videoView.requestFocus();
-        //videoView.start();
+        videoView.seekTo(10000);
+        videoView.start();
 
         // END of playing video of mentor
 

@@ -6,28 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:layout="@layout/fragment_mentor" >
+    tools:layout="@layout/fragment_mentor">
 
     <TextView
         android:id="@+id/mentorStory"
-        android:layout_width="381dp"
-        android:layout_height="422dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="35dp"
+        android:layout_width="410dp"
+        android:layout_height="448dp"
+        android:background="@drawable/roundedge"
         android:ellipsize="end"
         android:fadingEdge="vertical"
         android:scrollbars="vertical"
         android:textSize="15sp"
-        app:layout_constraintBottom_creator="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_creator="1"
-        app:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/mentorVideo"
         app:layout_editor_absoluteX="16dp"
         app:layout_editor_absoluteY="274dp"
         tools:layout_constraintBottom_creator="1"
@@ -40,8 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="239dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mentorStory"
+        app:layout_constraintEnd_toEndOf="@+id/mentorStory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/mentorStory"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
