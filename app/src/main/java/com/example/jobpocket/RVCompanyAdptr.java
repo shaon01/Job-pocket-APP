@@ -37,7 +37,7 @@ public class RVCompanyAdptr extends RecyclerView.Adapter<RVCompanyAdptr.CompanyV
 
     @Override
     public CompanyViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View cvh = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_activity, viewGroup, false);
+        View cvh = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.all_company_view_activity, viewGroup, false);
         CompanyViewHolder companyViewHolder = new CompanyViewHolder(cvh);
         return companyViewHolder;
     }

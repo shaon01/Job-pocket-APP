@@ -39,9 +39,7 @@ public class Compaines extends AppCompatActivity {
 
 
         initializeData();
-
-        //Todo : fix the adapter
-        //initializeAdapter();
+        initializeAdapter();
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
