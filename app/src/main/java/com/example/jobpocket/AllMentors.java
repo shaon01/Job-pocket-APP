@@ -49,6 +49,9 @@ public class AllMentors extends AppCompatActivity {
         persons.add(new Person("Emma Wilson", "23 years old", R.drawable.emma));
         persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.lavery));
         persons.add(new Person("Lillie Watts", "35 years old", R.drawable.lillie));
+        persons.add(new Person("Emma Wilson", "23 years old", R.drawable.emma));
+        persons.add(new Person("Lavery Maiss", "25 years old", R.drawable.lavery));
+        persons.add(new Person("Lillie Watts", "35 years old", R.drawable.lillie));
     }
 
     private void initializeAdapter(){
