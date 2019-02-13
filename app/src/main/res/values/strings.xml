@@ -12,4 +12,5 @@
     <string name="title_activity_all_mentors">AllMentors</string>
     <string name="fst_mentor_name">Alicia keys \n Age : 32</string>
     <string name="fst_mentor_bio">I am professional in data science and I love my profession.</string>
+    <string name="all_company_title">More companies</string>
 </resources>
