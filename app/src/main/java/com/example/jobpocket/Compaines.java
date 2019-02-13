@@ -61,6 +61,12 @@ public class Compaines extends AppCompatActivity {
         companyBios.add(new CompanyBio("Ericsson",R.drawable.ericsson));
         companyBios.add(new CompanyBio("Volvo",R.drawable.volvo));
         companyBios.add(new CompanyBio("Ericsson",R.drawable.ericsson));
+        companyBios.add(new CompanyBio("Volvo",R.drawable.volvo));
+        companyBios.add(new CompanyBio("Ericsson",R.drawable.ericsson));
+        companyBios.add(new CompanyBio("Volvo",R.drawable.volvo));
+        companyBios.add(new CompanyBio("Ericsson",R.drawable.ericsson));
+        companyBios.add(new CompanyBio("Volvo",R.drawable.volvo));
+        companyBios.add(new CompanyBio("Ericsson",R.drawable.ericsson));
 
 
     }
